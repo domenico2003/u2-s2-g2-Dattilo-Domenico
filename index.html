@@ -3,13 +3,201 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Agenzia Viaggi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3 ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo.svg" alt="logo" width="120" height="50">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#saldi">Saldi</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#WelcomeSummer">Welcome summer</a>
+                  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lasteMinute">Laste Minute</a>
+              </li>
+
+                </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Recenzioni</a>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search">
+              <button type="submit" class="btn btn-outline-danger">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     
-    
-    
+      <div class=" container bg-body-tertiary mt-5 text-secondary ">
+            <div class="px-4 py-4 text-center text-lg-start ">
+                <div class="d-flex justify-content-center  justify-content-lg-start align-items-center mb-2 h-100 w-100">
+                    <h1 class="fw-normal m-0">Edenviaggi</h1>
+                    <p class="m-0">-Feel the freedom</p>
+                </div>
+                <div class="w-100 border-bottom border-secondary mt-3 mb-2"></div> 
+                
+                
+                    <h4 class="fw-normal">scopri le destinazioni piu calde del momento</h4> 
+                    <button type="button" class="btn btn-info text-light px-5 fw-bold mt-5 mb-3 ">Prenota ora</button>
+                
+            </div>        
+      </div>     
+      
+      <div class="container mt-5" id="saldi">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+            <h3 class="m-0 ">saldi</h3>
+            <a href="#">Nasccondi Sezione</a>
+        </div>
+        <div class="row row-cols-2  row-cols-md-3 row-cols-lg-4 gap-0 row-gap-2 ">
+            <div class="col ">
+                <div class="card border-info" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card border-info" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-info" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-md-none d-lg-block ">
+                <div class="card border-info " >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+      </div>
+      <div class="container mt-5" id="WelcomeSummer">
+        <div class="d-flex align-items-center justify-content-between mb-2">
+            <h3 class="m-0 ">Welcome Summer</h3>
+            <a href="#">Nasccondi Sezione</a>
+        </div>
+        <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-6 gap-0 row-gap-5 ">
+            <div class="col ">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                    <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">titolo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-info">Prenota</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+      </div>
+      <div class="container mt-5 d-none d-lg-block" >
+        <h3 class="m-0 ">Offerta del giorno</h3>
+        <div class="card mb-3" >
+            <div class="row g-0">
+              <div class="col-8">
+                <img src="assets/img/muraglia-cinese.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-4">
+                <div class="card-body">
+                  <h2 class="card-title">Muraglia Cinese</h2>
+                  <p class="card-text"><small class="text-muted">15.01.2021-31.01.2021</small></p>
+                  <p class="card-text">Ville a partire da 500$, non fartele sfuggire!</p>
+                  <button type="button" class="btn btn-dark p-0 px-2 rounded-pill fw-bold">Best offer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
