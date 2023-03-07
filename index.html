@@ -1,203 +1,326 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agenzia Viaggi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
-  <body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky top-0 z-3 ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.svg" alt="logo" width="120" height="50">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#saldi">Saldi</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#WelcomeSummer">Welcome summer</a>
-                  
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#lasteMinute">Laste Minute</a>
-              </li>
-
-                </li>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Recenzioni</a>
-                </li>
+                        <a class="nav-link " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#saldi">Saldi</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#WelcomeSummer">Welcome summer</a>
 
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search">
-              <button type="submit" class="btn btn-outline-danger">Cerca</button>
-            </form>
-          </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#LasteMinute">Laste Minute</a>
+                    </li>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recensioni">Recenzioni</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno"
+                        aria-label="Search">
+                    <button type="submit" class="btn btn-outline-danger">Cerca</button>
+                </form>
+            </div>
         </div>
-      </nav>
-    
-      <div class=" container bg-body-tertiary mt-5 text-secondary ">
-            <div class="px-4 py-4 text-center text-lg-start ">
-                <div class="d-flex justify-content-center  justify-content-lg-start align-items-center mb-2 h-100 w-100">
-                    <h1 class="fw-normal m-0">Edenviaggi</h1>
-                    <p class="m-0">-Feel the freedom</p>
-                </div>
-                <div class="w-100 border-bottom border-secondary mt-3 mb-2"></div> 
-                
-                
-                    <h4 class="fw-normal">scopri le destinazioni piu calde del momento</h4> 
-                    <button type="button" class="btn btn-info text-light px-5 fw-bold mt-5 mb-3 ">Prenota ora</button>
-                
-            </div>        
-      </div>     
-      
-      <div class="container mt-5" id="saldi">
-        <div class="d-flex align-items-center justify-content-between mb-2">
+    </nav>
+
+    <div class=" container bg-body-tertiary mt-5 text-secondary ">
+        <div class="px-4 py-4 text-center text-lg-start ">
+            <div class="d-flex justify-content-center  justify-content-lg-start align-items-center mb-2 h-100 w-100">
+                <h1 class="fw-normal m-0">Edenviaggi</h1>
+                <p class="m-0">-Feel the freedom</p>
+            </div>
+            <div class="w-100 border-bottom border-secondary mt-3 mb-2"></div>
+
+
+            <h4 class="fw-normal">scopri le destinazioni piu calde del momento</h4>
+            <button type="button" class="btn btn-info text-light px-5 fw-bold mt-5 mb-3 ">Prenota ora</button>
+
+        </div>
+    </div>
+
+    <div class="container mt-5" id="saldi">
+        <div class="d-flex align-items-center justify-content-between  mb-4">
             <h3 class="m-0 ">saldi</h3>
-            <a href="#">Nasccondi Sezione</a>
+            <button type="button" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#sconti" aria-expanded="true" aria-controls="sconti">Nasccondi Sezione</button>
         </div>
-        <div class="row row-cols-2  row-cols-md-3 row-cols-lg-4 gap-0 row-gap-2 ">
+        <div class="row row-cols-2  row-cols-md-3 row-cols-lg-4 gap-0 row-gap-2 collapse show" id="sconti">
             <div class="col ">
-                <div class="card border-info" >
+                <div class="card border-info">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
 
             <div class="col ">
-                <div class="card border-info" >
+                <div class="card border-info">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
             <div class="col ">
-                <div class="card border-info" >
+                <div class="card border-info">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
             <div class="col d-md-none d-lg-block ">
-                <div class="card border-info " >
+                <div class="card border-info ">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
-      </div>
-      <div class="container mt-5" id="WelcomeSummer">
-        <div class="d-flex align-items-center justify-content-between mb-2">
+    </div>
+    <div class="container mt-5" id="WelcomeSummer">
+        <div class="d-flex align-items-center justify-content-between mb-4">
             <h3 class="m-0 ">Welcome Summer</h3>
-            <a href="#">Nasccondi Sezione</a>
+            <button type="button" class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#estate" aria-expanded="true" aria-controls="estate">Nasccondi Sezione</button>
         </div>
-        <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-6 gap-0 row-gap-5 ">
+        <div class="row row-cols-2  row-cols-lg-3 row-cols-xxl-6 gap-0 row-gap-5 collapse show" id="estate">
             <div class="col ">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
 
             <div class="col ">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
             <div class="col ">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="col">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
-                </div> 
+                </div>
             </div>
             <div class="col">
-                <div class="card border-0 shadow-lg   bg-body-tertiary rounded" >
+                <div class="card border-0 shadow-lg   bg-body-tertiary rounded">
                     <img src="assets/img/muraglia-cinese.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">titolo</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="btn btn-info">Prenota</a>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
 
-      </div>
-      <div class="container mt-5 d-none d-lg-block" >
-        <h3 class="m-0 ">Offerta del giorno</h3>
-        <div class="card mb-3" >
+    </div>
+    <div class="container mt-5 d-none d-lg-block">
+        <h3 class="m-0 mb-4 ">Offerta del giorno</h3>
+        <div class="card mb-3">
             <div class="row g-0">
-              <div class="col-8">
-                <img src="assets/img/muraglia-cinese.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-4">
-                <div class="card-body">
-                  <h2 class="card-title">Muraglia Cinese</h2>
-                  <p class="card-text"><small class="text-muted">15.01.2021-31.01.2021</small></p>
-                  <p class="card-text">Ville a partire da 500$, non fartele sfuggire!</p>
-                  <button type="button" class="btn btn-dark p-0 px-2 rounded-pill fw-bold">Best offer</button>
+                <div class="col-8">
+                    <img src="assets/img/muraglia-cinese.jpg"
+                        class="img-fluid rounded-start shadow-sm  bg-body-tertiary " alt="...">
                 </div>
-              </div>
+                <div class="col-4">
+                    <div class="card-body">
+                        <h2 class="card-title">Muraglia Cinese</h2>
+                        <p class="card-text lead font-monospace"><small class="text-muted">15.01.2021-31.01.2021</small>
+                        </p>
+                        <p class="card-text">Ville a partire da 500$, non fartele sfuggire!</p>
+                        <button type="button" class="btn btn-dark p-0 px-2 rounded-pill fw-bold">Best offer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5" id="LasteMinute">
+        <h3 class="m-0 mb-4 ">Laste Minute</h3>
+        <div class="row row-cols-2 row-cols-lg-3 row-cols-xxl-6 gap-0 row-gap-4">
+            <div class="col ">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col">
+                <div><img src="assets/img/muraglia-cinese.jpg" alt="muraglia-cinese" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container my-5 " id="recensioni">
+        <div class="d-flex align-items-center justify-content-around ">
+            <h3 class="m-0 mb-4 ">Dicono di noi</h3>
+        </div>
+        <div class="row row-cols-1 mb-3">
+            <div class="col d-flex">
+                <img src="assets/img/facebookanonimo.jpg" alt="" height="50px" class="border border-2 border-info rounded-circle me-4">
+                <div>
+                    <h5>Username</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aut illum minima mollitia? Ad omnis qui sunt quod doloribus similique nemo itaque inventore ratione ut atque, recusandae nesciunt dolorem assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vitae, aperiam esse aspernatur, distinctio possimus unde repudiandae doloremque deserunt repellat earum magnam atque tenetur in, iure amet voluptatem dolor enim?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 mb-3">
+            <div class="col d-flex">
+                <img src="assets/img/facebookanonimo.jpg" alt="" height="50px" class="border border-2 border-info rounded-circle me-4">
+                <div>
+                    <h5>Username</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aut illum minima mollitia? Ad omnis qui sunt quod doloribus similique nemo itaque inventore ratione ut atque, recusandae nesciunt dolorem assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vitae, aperiam esse aspernatur, distinctio possimus unde repudiandae doloremque deserunt repellat earum magnam atque tenetur in, iure amet voluptatem dolor enim?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 mb-3 ">
+            <div class="col d-flex">
+                <img src="assets/img/facebookanonimo.jpg" alt="" height="50px" class="border border-2 border-info rounded-circle me-4">
+                <div>
+                    <h5>Username</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis aut illum minima mollitia? Ad omnis qui sunt quod doloribus similique nemo itaque inventore ratione ut atque, recusandae nesciunt dolorem assumenda? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut vitae, aperiam esse aspernatur, distinctio possimus unde repudiandae doloremque deserunt repellat earum magnam atque tenetur in, iure amet voluptatem dolor enim?</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="bg-dark text-light text-center py-5 ">
+        <button type="button" class="btn btn-dark border border-1 border-secondary text-secondary mb-4" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Contattaci</button>
+        <p class="mb-2 mt-1"><i class="bi bi-c-circle"></i> 2021 Kalina Travel LTD. All Rights Reserved</p>  
+    </footer>
+
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> FACEBOOK </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <a href="https://www.facebook.com/Edenviaggi/" class="text-dark">Eden Viaggi </a>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">instagram</button>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">INSTAGRAM</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <a href="https://www.instagram.com/Edenviaggi/" class="text-dark">Eden viaggi</a>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">facebook</button>
+            </div>
+          </div>
+        </div>
       </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
